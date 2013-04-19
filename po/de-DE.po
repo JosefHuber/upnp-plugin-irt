@@ -1,0 +1,310 @@
+# Language de-DE translations for PACKAGE package.
+# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# savop <denis.loh@hft-leipzig.de>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.0.2\n"
+"Report-Msgid-Bugs-To: <see README>\n"
+"POT-Creation-Date: 2013-02-07 12:25+0100\n"
+"PO-Revision-Date: 2010-01-24 20:14+0100\n"
+"Last-Translator: savop <denis.loh@hft-leipzig.de>\n"
+"Language-Team: Language de-DE\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy, c-format
+msgid ""
+"  The server can automatically detect both IP address and an\n"
+"  appropriate port, assuming that the first network interface\n"
+"  is connected to the internal network. However, it is possible\n"
+"  to specify alternative settings with the following options:\n"
+"\n"
+"  -i <interface>  --int=<interface>     The server network\n"
+"                                        interface\n"
+"                                        e.g: eth0, wlan1 etc.\n"
+"                                        If given option '-a' must\n"
+"                                        be absent.\n"
+"  -a <address>    --address=<address>   The server IPv4 address.\n"
+"                                        If given option '-i' must\n"
+"                                        be absent.\n"
+"  -p <port>       --port=<port>         The server port\n"
+"                                        Supported ports:\n"
+"                                              %5d (auto detect)\n"
+"                                        %5d-%5d (user defined)\n"
+"  -d              --autodetect          Force auto detection\n"
+"                                        Use this option to\n"
+"                                        overwrite the setup menu\n"
+"                                        options.\n"
+"  -B              --broadcastprepend    Prepend the broadcast title with\n"
+"                                        the channel name and channel number.\n"
+"  -C              --changeradioclass    Change the UPnP Class ..audioitem.audioBroadcast\n"
+"                                        to object.item.videoItem.videoBroadcast\n"
+"  -D              --duration            Change a resource duration of '0:00:00'\n"
+"                                        to '0:50:00'. A workaround for some\n"
+"                                        live-stream players.\n"
+"  -E <file>       --epg=<file>          Prepare EPG containers and items and\n"
+"                                        show them with contentdirectory::browse.\n"
+"                                        The 'file' specifies the epg data file in use. \n"
+"  -F <amount>     --first_channels      Take only the first n channels\n"
+"                                        from channels.conf\n"
+"  -O              --oppress_timers      When the parameter is given, with the\n"
+"                                        contentdirectory::browse the folders with\n"
+"                                        the record timers are oppressed.\n"
+"  -P <days>       --preview_epg         The number of days the EPG events are\n"
+"                                        gathered in advance. The -P parameter\n"
+"                                        only takes effect when combined with -E\n"
+"  -R              --radio               Prepare radio containers and items and\n"
+"                                        show them with contentdirectory::browse.\n"
+"  -T              --title_append        Append the recording title with\n"
+"                                        the channel name.\n"
+"  -v              --verbose             Increase verbosity level\n"
+"                                        The more v options the\n"
+"                                        higher the output level\n"
+"  -W              --without_ca          Only the free to air channels are selected\n"
+"                                        from channels.conf.\n"
+"                  --dbdir=<directory>   The directory in which the\n"
+"                                        metadata database is stored\n"
+"                  --httpdir=<directory> The directory where the\n"
+"                                        http documents are located\n"
+msgstr ""
+"  Der Server kann automatisch sowohl die IP-Adresse als auch einen\n"
+"  passenden Port erkennen. Dabei wird davon ausgegangen, dass die\n"
+"  erste Netzwerkkarte zum internen Netz verbunden ist. Dennoch ist\n"
+"  ist es möglich, alternative Einstellungen mit den folgenden\n"
+"  Optionen anzugeben:\n"
+"\n"
+"  -i <interface>  --int=<interface>     Die Servernetzwerkkarte\n"
+"                                        z.B: eth0, wlan1 etc.\n"
+"                                        Wenn angegeben, darf '-a'\n"
+"                                        nicht angegeben werden.\n"
+"  -a <address>    --address=<address>   Die Server-IPv4-Adresse.\n"
+"                                        Wenn angegeben, darf '-i'\n"
+"                                        nicht angegeben werden.\n"
+"  -p <port>       --port=<port>         Der Serverport\n"
+"                                        Unterstützte Ports:\n"
+"                                              %5d (Autoerkennung)\n"
+"                                        %5d-%5d (benutzerdefiniert)\n"
+"  -d              --autodetect          Erzwinge Autoerkennung\n"
+"                                        Diese Option verwenden, um\n"
+"                                        die Einstellungen im Setup-\n"
+"                                        menü zu überschreiben.\n"
+"  -v              --verbose             Erhöht den Ausgabelevel\n"
+"                                        Je mehr v-Optionen\n"
+"                                        desto mehr Ausgaben\n"
+"                  --dbdir=<directory>   Das Verzeichnis, worin die\n"
+"                                        Metadatenbank abgelegt ist\n"
+"                  --httpdir=<directory> Das Verzeichnis in dem\n"
+"                                        die HTTP Dokumente liegen\n"
+
+msgid "The UPnP server is still running."
+msgstr "Der UPnP server läuft noch."
+
+msgid "User defined"
+msgstr "Benutzerdefiniert"
+
+msgid "Enable UPnP Server"
+msgstr "UPnP-Server einschalten"
+
+msgid "disabled"
+msgstr "ausgeschaltet"
+
+msgid "enabled"
+msgstr "eingeschaltet"
+
+msgid "Auto detect settings"
+msgstr "Einstellungen erkennen"
+
+msgid "no"
+msgstr "nein"
+
+msgid "yes"
+msgstr "ja"
+
+msgid "Bind to network interface"
+msgstr "An aktuelle Netzwerkkarte binden"
+
+msgid "Current IP address"
+msgstr "Aktuelle IP-Adresse"
+
+msgid "Set IP address"
+msgstr "IP-Adresse setzen"
+
+msgid "Select port"
+msgstr "Port auswählen"
+
+msgid "auto"
+msgstr "auto"
+
+msgid "user definied"
+msgstr "benutzerdefiniert"
+
+msgid "User specified port"
+msgstr "benutzerdefinierter Port"
+
+msgid "Video"
+msgstr "Video"
+
+msgid "TV"
+msgstr "TV"
+
+msgid "Records"
+msgstr "Aufnahmen"
+
+msgid "Audio"
+msgstr "Audio"
+
+msgid "Radio"
+msgstr "Radio"
+
+msgid "User videos"
+msgstr "Benutzervideos"
+
+msgid "EPG"
+msgstr ""
+
+#, fuzzy
+msgid "Record Timer"
+msgstr "Aufnahmen"
+
+msgid "Timer TV"
+msgstr ""
+
+#, fuzzy
+msgid "Timer Radio"
+msgstr "Radio"
+
+msgid "Invalid action"
+msgstr "Ungültige Aktion"
+
+msgid "Invalid args"
+msgstr "Ungültige Argumente"
+
+msgid "Invalid var"
+msgstr "Ungültige Variable"
+
+msgid "Action failed"
+msgstr "Aktion fehlgeschlagen"
+
+msgid "Argument value invalid"
+msgstr "Argumentenwert ungültig"
+
+msgid "Argument value out of range"
+msgstr "Argumentenwert außerhalb der Gültigkeit"
+
+msgid "Optional action not implemented"
+msgstr "Optionale Aktion nicht implementiert"
+
+msgid "Out of memory"
+msgstr "Kein Speicher verfügbar"
+
+msgid "Human intervention required"
+msgstr "Benutzereingriff notwendig"
+
+msgid "String argument to long"
+msgstr "Zeichenkettenargument zu lang"
+
+msgid "Action not authorized"
+msgstr "Aktion nicht authorisiert"
+
+msgid "Signature failure"
+msgstr "Signaturfehler"
+
+msgid "Signature missing"
+msgstr "Signatur fehlt"
+
+msgid "Not encrypted"
+msgstr "Nicht verschlüsselt"
+
+msgid "Invalid sequence"
+msgstr "Ungültige Sequenz"
+
+msgid "Invalid control URL"
+msgstr "Ungültige Steuer-URL"
+
+msgid "No such session"
+msgstr "Keine solche Sitzung"
+
+msgid "Unknown error code. Contact the device manufacturer"
+msgstr "Unbekannter Fehlercode. Kontaktieren Sie den Hersteller"
+
+msgid "Incompatible protocol info"
+msgstr "Inkompatible Protokollinfo"
+
+msgid "Incompatible directions"
+msgstr "Inkompatible Richtungen"
+
+msgid "Insufficient network resources"
+msgstr "Nicht ausreichende Netzwerkressourcen"
+
+msgid "Local restrictions"
+msgstr "Lokale Restriktionen"
+
+msgid "Access denied"
+msgstr "Zugriff verweigert"
+
+msgid "Invalid connection reference"
+msgstr "Ungültige Verbindungsreferenz"
+
+msgid "Not in network"
+msgstr "Nicht in diesem Netzwerk"
+
+msgid "Bad metadata"
+msgstr "Falsche Metadaten"
+
+msgid "Cannot process the request"
+msgstr "Kann Anfrage nicht bearbeiten"
+
+msgid "Destination resource access denied"
+msgstr "Zugriff auf Zielressource verweigert"
+
+msgid "Invalid current tag"
+msgstr "Ungültiger aktueller Tag"
+
+msgid "Invalid new tag"
+msgstr "Ungültiger neuer Tag"
+
+msgid "Invalid or unsupported search criteria"
+msgstr "Ungültige oder nicht unterstütze Suchkriterie"
+
+msgid "Invalid or unsupported sort criteria"
+msgstr "Ungültige oder nicht unterstützte Sortierkriterie"
+
+msgid "No such container"
+msgstr "Kein solcher Container"
+
+msgid "No such destination resource"
+msgstr "Keine solche Zielressource"
+
+msgid "No such file transfer"
+msgstr "Kein solcher Datentransfer"
+
+msgid "No such objectID"
+msgstr "Keine solche ObjektID"
+
+msgid "No such source resource"
+msgstr "Keine solche Quellressource"
+
+msgid "Parameter mismatch"
+msgstr "Parameter nicht passend"
+
+msgid "Read only tag"
+msgstr "Nur lesbarer Tag"
+
+msgid "Required tag"
+msgstr "Notwendiger Tag"
+
+msgid "Resource access denied"
+msgstr "Zugriff auf Ressource verweigert"
+
+msgid "Restricted object"
+msgstr "Beschränktes Objekt"
+
+msgid "Restricted parent"
+msgstr "Beschränktes Elternobjekt"
+
+msgid "Transfer busy"
+msgstr "Datentransfer ausgelastet"

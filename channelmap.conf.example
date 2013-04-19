@@ -1,0 +1,30 @@
+#####################################################
+#                                                   #
+#               VDR UPnP/DLNA Plugin                #
+#                                                   #
+#                  Channel mapping                  #
+#                                                   #
+#####################################################
+#
+# Default behavior of the plugin is that it will load
+# all channels from VDRs channels.conf and creates
+# a Video Broadcast item for every single channel
+#
+# It can be controlled by combining or excluding
+# certain channels in this configuration file
+#
+# Syntax:
+#
+# Each rule must be written on a separate line
+#
+# Combine multiple channels (at least 2)
+# <ChannelID>:<ChannelID>[:<ChannelID>]
+#
+# Example: T-8468-514-516:C-8468-514-516:S-8468-514-516
+# This will combine three channels to one metadata item
+#
+# Exclude a channel from list
+# -<ChannelID>
+#
+# Example: -T-8468-514-516
+# This will exclude that channel from loading

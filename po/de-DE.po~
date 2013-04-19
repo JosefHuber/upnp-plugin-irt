@@ -1,0 +1,273 @@
+# Language de-DE translations for PACKAGE package.
+# Copyright (C) 2009 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# savop <denis.loh@hft-leipzig.de>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vdr-upnp 0.0.1\n"
+"Report-Msgid-Bugs-To: <see README>\n"
+"POT-Creation-Date: 2010-01-24 20:11+0100\n"
+"PO-Revision-Date: 2009-12-30 22:17+0100\n"
+"Last-Translator: Denis <denis.loh@hft-leipzig.de>\n"
+"Language-Team: Language de-DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy, c-format
+msgid ""
+"  The server can automatically detect both IP address and an\n"
+"  appropriate port, assuming that the first network interface\n"
+"  is connected to the internal network. However, it is possible\n"
+"  to specify alternative settings with the following options:\n"
+"\n"
+"  -i <interface>  --int=<interface>     The server network\n"
+"                                        interface\n"
+"                                        e.g: eth0, wlan1 etc.\n"
+"                                        If given option '-a' must\n"
+"                                        be absent.\n"
+"  -a <address>    --address=<address>   The server IPv4 address.\n"
+"                                        If given option '-i' must\n"
+"                                        be absent.\n"
+"  -p <port>       --port=<port>         The server port\n"
+"                                        Supported ports:\n"
+"                                              %5d (auto detect)\n"
+"                                        %5d-%5d (user defined)\n"
+"  -d              --autodetect          Force auto detection\n"
+"                                        Use this option to\n"
+"                                        overwrite the setup menu\n"
+"                                        options.\n"
+"  -v              --verbose             Increase verbosity level\n"
+"                                        The more v options the\n"
+"                                        higher the output level\n"
+"                  --dbdir=<directory>   The directory in which the\n"
+"                                        metadata database is stored\n"
+"                  --httpdir=<directory> The directory where the\n"
+"                                        http documents are located\n"
+msgstr ""
+"  Der Server kann automatisch sowohl die IP-Adresse als auch einen\n"
+"  passenden Port erkennen. Dabei wird davon ausgegangen, dass die\n"
+"  erste Netzwerkkarte mit dem internen Netzwerk verbunden ist.\n"
+"  Es ist aber auch möglich dieses Verhalten über folgende Optionen\n"
+"  zu steuern:\n"
+"\n"
+"  -i <interface>  --int=<interface>   Die Servernetzwerkkarte\n"
+"                                      z.B.: eth0, wlan1 etc.\n"
+"                                      Falls angegeben, muss '-a'\n"
+"                                      weggelassen werden.\n"
+"  -a <address>    --address=<address> Die Server-IPv4-Adresse.\n"
+"                                      Falls angegeben, muss '-i'\n"
+"                                      weggelassen werden.\n"
+"  -p <port>       --port=<port>       Der Serverport\n"
+"                                      Unterstützte ports:\n"
+"                                            %5d (automatisch)\n"
+"                                      %5d-%5d (benutzerdefiniert)\n"
+"  -d              --autodetect        Automatische Erkennung\n"
+"                                      erzwingen\n"
+"                                      Die Option verwenden, um\n"
+"                                      die Einstellungen des\n"
+"                                      Setupmenüs zu überschreiben.\n"
+"  -v              --verbose           Ausgabelevel erhöhen\n"
+"                                      Je öfter diese Option\n"
+"                                      desto höher der Ausgabelevel\n"
+"                  --dbdir=<pfad>      Das Verzeichnis, worin die\n"
+"                                      Metadatenbank gespeichert ist\n"
+"                  --httpdir=<pfad>    Das Verzeichnis für alle\n"
+"                                      HTTP Dokumente\n"
+
+msgid "The UPnP server is still running."
+msgstr "Der UPnP-Server läuft noch."
+
+#, fuzzy
+#~ msgid "user defined"
+#~ msgstr "benutzerdefiniert"
+
+#~ msgid "Enable UPnP Server"
+#~ msgstr "UPnP-Server aktivieren"
+
+#~ msgid "disabled"
+#~ msgstr "aktiviert"
+
+#~ msgid "enabled"
+#~ msgstr "deaktiviert"
+
+#~ msgid "Auto detect settings"
+#~ msgstr "Einstellungen erkennen"
+
+#~ msgid "no"
+#~ msgstr "nein"
+
+#~ msgid "yes"
+#~ msgstr "ja"
+
+#~ msgid "Bind to network interface"
+#~ msgstr "An Netzwerkkarte binden"
+
+#~ msgid "Current IP address"
+#~ msgstr "Aktuelle IP-Adresse"
+
+#~ msgid "Set IP address"
+#~ msgstr "IP-Adresse setzen"
+
+#~ msgid "Select port"
+#~ msgstr "Port wählen"
+
+#~ msgid "auto"
+#~ msgstr "auto"
+
+#~ msgid "user definied"
+#~ msgstr "benutzerdefiniert"
+
+#~ msgid "User specified port"
+#~ msgstr "benutzerdefinierter Port"
+
+#~ msgid "Video"
+#~ msgstr "Video"
+
+#~ msgid "Audio"
+#~ msgstr "Audio"
+
+#~ msgid "TV"
+#~ msgstr "TV"
+
+#~ msgid "Records"
+#~ msgstr "Aufnahmen"
+
+#~ msgid "Radio"
+#~ msgstr "Radio"
+
+#~ msgid "User videos"
+#~ msgstr "Benutzervideos"
+
+#~ msgid "Invalid action"
+#~ msgstr "Ungültige Aktion"
+
+#~ msgid "Invalid args"
+#~ msgstr "Ungültige Argumente"
+
+#~ msgid "Invalid var"
+#~ msgstr "Ungültige Variable"
+
+#~ msgid "Action failed"
+#~ msgstr "Aktion fehlgeschlagen"
+
+#~ msgid "Argument value invalid"
+#~ msgstr "Argumentenwert ungültig"
+
+#~ msgid "Argument value out of range"
+#~ msgstr "Argumentenwert außerhalb des Bereichs"
+
+#~ msgid "Optional action not implemented"
+#~ msgstr "Optionale Aktion nicht implementiert"
+
+#~ msgid "Out of memory"
+#~ msgstr "kein Speicher verfügbar"
+
+#~ msgid "Human intervention required"
+#~ msgstr "Benutzereingriff notwendig"
+
+#~ msgid "String argument to long"
+#~ msgstr "Zeichenkette zu lang"
+
+#~ msgid "Action not authorized"
+#~ msgstr "Aktion nicht authorisiert"
+
+#~ msgid "Signature failure"
+#~ msgstr "Signaturfehler"
+
+#~ msgid "Signature missing"
+#~ msgstr "Signatur fehlt"
+
+#~ msgid "Not encrypted"
+#~ msgstr "Nicht verschlüsselt"
+
+#~ msgid "Invalid sequence"
+#~ msgstr "Ungültige Sequenz"
+
+#~ msgid "Invalid control URL"
+#~ msgstr "Ungültige Steuer-URL"
+
+#~ msgid "No such session"
+#~ msgstr "Sitzung unbekannt"
+
+#~ msgid "Unknown error code. Contact the device manufacturer"
+#~ msgstr "Unbekannter Fehlercode. Bitte kontaktieren Sie den Hersteller"
+
+#~ msgid "Incompatible protocol info"
+#~ msgstr "Inkompatible Protokollinformation"
+
+#~ msgid "Incompatible directions"
+#~ msgstr "Inkompatible Richtung"
+
+#~ msgid "Insufficient network resources"
+#~ msgstr "Nicht genügend Netzwerkbandbreite"
+
+#~ msgid "Local restrictions"
+#~ msgstr "Lokale Beschränkungen"
+
+#~ msgid "Access denied"
+#~ msgstr "Zugriff verweigert"
+
+#~ msgid "Invalid connection reference"
+#~ msgstr "Ungültige Verbundungsreferenz"
+
+#~ msgid "Not in network"
+#~ msgstr "Nicht in diesem Netzwerk"
+
+#~ msgid "Bad metadata"
+#~ msgstr "Fehlerhafte Metadaten"
+
+#~ msgid "Cannot process the request"
+#~ msgstr "Kann Anfrage nicht ausführen"
+
+#~ msgid "Destination resource access denied"
+#~ msgstr "Zugriff auf Zielressource verweigert"
+
+#~ msgid "Invalid current tag"
+#~ msgstr "Ungültiger aktueller Tag"
+
+#~ msgid "Invalid new tag"
+#~ msgstr "Ungültiger neuer Tag"
+
+#~ msgid "Invalid or unsupported search criteria"
+#~ msgstr "Ungültige oder nicht unterstützte Suchanfrage"
+
+#~ msgid "Invalid or unsupported sort criteria"
+#~ msgstr "Ungültige oder nicht unterstützte Sortieranfrage"
+
+#~ msgid "No such container"
+#~ msgstr "Container existiert nicht"
+
+#~ msgid "No such destination resource"
+#~ msgstr "Zielressource existiert nicht"
+
+#~ msgid "No such file transfer"
+#~ msgstr "Datentransfer existiert nicht"
+
+#~ msgid "No such objectID"
+#~ msgstr "Objekt-ID existiert nicht"
+
+#~ msgid "No such source resource"
+#~ msgstr "Quellressource existiert nicht"
+
+#~ msgid "Parameter mismatch"
+#~ msgstr "Parameter passen nicht"
+
+#~ msgid "Read only tag"
+#~ msgstr "nur Lesezugriff auf Tag"
+
+#~ msgid "Required tag"
+#~ msgstr "Benötigter Tag"
+
+#~ msgid "Resource access denied"
+#~ msgstr "Zugriff auf Ressource verweigert"
+
+#~ msgid "Restricted object"
+#~ msgstr "Beschränktes Objekt"
+
+#~ msgid "Restricted parent"
+#~ msgstr "Beschränktes Elternobjekt"
+
+#~ msgid "Transfer busy"
+#~ msgstr "Datenübertragung ausgelastet"

@@ -1,0 +1,174 @@
+This is a "plugin" for the Video Disk Recorder (VDR).
+
+Written by:                  Denis Loh <denis.loh@hftl.de>
+                             Andreas Günther <andreas.guenther@hftl.de>
+                             J.Huber, IRT GmbH <huber@irt.de>
+
+Project's homepage:          http://upnp.vdr-developer.org
+
+Latest version available at: http://upnp.vdr-developer.org
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+See the file COPYING for more information.
+
+Please note: This plugin is written under the terms of open source
+redistribution by
+
+Hochschule für Telekommunikation Leipzig,
+University of Applied Science
+Gustav-Freytag-Straße 43-45
+04277 Leipzig
+Germany
+http://www.hft-leipzig.de
+
+Institut für Rundfunktechnik (IRT)
+Floriansmühlstraße 60
+80939 München
+Germany
+http://www.irt.de
+
+All rights reserved.
+
+
+Description:
+
+UPnP/DLNA Plugin for Video Disk Recorder
+
+This Plugins extends the VDR with the possibility to act as an UPnP/DLNA Media
+Server (DMS). It will serve VDR's contents in the network to any UPnP-AV and
+DLNA capable devices.
+
+The plugin requires a valid network connection with a IPv4 address. It will find
+its settings automatically by default. In this case, the first network device in
+the network device list with a valid IPv4 address and port 49152 will be used
+for connections. You can change this behavior either by setting the command line
+options or by editing the setup via the VDRs setup page. The command line
+options have a higher priority and substitute the menu settings.
+
+The command line settings are:
+  -i <interface>  --int=<interface>     The server network
+                                        interface
+                                        e.g: eth0, wlan1 etc.
+                                        If given option '-a' must
+                                        be absent.
+  -a <address>    --address=<address>   The server IPv4 address.
+                                        If given option '-i' must
+                                        be absent.
+  -p <port>       --port=<port>         The server port
+                                        Supported ports:
+                                        0           (auto detect)
+                                        49152-65535 (user defined)
+  -d              --autodetect          Force auto detection
+                                        Use this option to
+                                        overwrite the setup menu
+                                        options.
+  -v              --verbose             Increase verbosity level
+                                        The more v options the
+                                        higher the output level
+                  --dbdir=<directory>   The directory in which the
+                                        metadata database is stored
+                  --httpdir=<directory> The directory where the
+                                        http documents are located
+  -B		  --broadcastprepend	Prepend the broadcast event title with
+  					the channel number and channel name.
+  -C		  --changeradioclass	Change the UPnP Class "object.item.audioitem.audioBroadcast"
+  					to "object.item.videoItem.videoBroadcast".
+  -D              --duration            Change a resource duration of '0:00:00'
+  					to '0:50:00'.
+  -E <file>       --epg=<file>          Prepare EPG containers and items and
+  					show them with contentdirectory::browse.
+  					The 'file' specifies the epg data file in use.
+  -F <amount>     --first_channels      Take only the first n channels
+                                        from channels.conf. Default: Show all.					
+  -O              --oppress_timers      When the parameter is given, with the
+  					contentdirectory::browse the folders with
+  					the record timers are oppressed.
+  -P <days>       --preview_epg         The number of days the EPG events are
+  					gathered in advance. The -P parameter
+  					only takes effect when combined with -E.
+  					Default value: 7 days.
+  -R              --radio               Prepare radio containers and items and
+  					show them with contentdirectory::browse.
+  -T		  --title_append	Append the channel name to the recording title.					
+  -W		  --without_ca   	Only free to air channels are selected
+  					from channels.conf.					
+
+The verbose option can be more than once. With each option the verbosity level
+will be increased. The maximum level is 5. Further options are silently ignored.
+
+  -v                                  Print most important messages
+  -vv                                 Print messages from the components
+                                      i.e. the webserver, CDS, CMS, etc.
+  -vvv                                Print messages from receivers and players
+                                      and other additional components
+  -vvvv                               You can't get enough, hum?
+                                      This will print SQL messages and DIDL
+                                      messages
+  -vvvvv                              Can you read the matrix? You can't?
+                                      Then try first reading SQL statements,
+                                      fetches, buffer and parser outputs or
+                                      any other outputs.
+
+If not options are set, menu options will be used.
+
+The server has a unique identifier, which is
+"uuid:b120ba52-d88d-4500-9b64-888971d83fd3". Other devices in the network can
+find and identify the VDR UPnP Server with this ID. However, the server should
+be found automatically and being listed under the supported media server
+devices. If not, please report this as a bug on the project homepage or send an
+email to the developers of this plugin with the full device description and, if
+applicable, the errors thrown by the media player device and/or the server.
+
+
+Dependencies:
+
+This plugin is tested with and requires the following libraries to work:
+
+libupnp-1.6.6               The UPnP SDK
+libsqlite-3.6               SQLite 3 Database
+
+libavcodec-svn20090303 or libavcodec53 (6:0.8.5-1)  FFMPEG Library for analyzing
+                                                    audio video codecs
+libavformat-svn20090303 or libavformat53(6:0.8.5-1) FFMPEG Library for analyzing 
+                                                    audio video formats
+boost::spirit               Grammar parser
+boost::function             Boost function library
+boost::bind                 Boost bind library
+
+The boost libraries are usually available in a packed version, so that only a
+single installation is required. The FFMPEG libraries comes with FFMPEG itself.
+
+ATTENTION: DO NOT USE ANOTHER VERSION OF LIBUPNP.
+
+libupnp-1.8.0 is known not to work with this plugin! Versions below 1.6.6 may
+work. However, there may exist some unknown issues.
+
+If you want to know everything about the code, please see the source code
+documentation at http://upnp.vdr-developer.org/docs/ where all public members
+are explained.
+
+I appreciate, if you help making the plugin better. If you find any project
+related errors or missing features, please open a new ticket at the plugin
+website with a detailed description of what you want or what happened.
+
+
+Patching the libupnp:
+
+If you have a DLNA compliant device such as TVs or streaming clients, you may
+require a patched version of libupnp. You can download the patch on the project
+website.
+
+Required plugin configuration folders and files:
+
+For an adequate operation there have to be the three folders 'http', 
+'EpgProgrammingConfirmation' and 'RecTimerPurgeConfirmation' within the upnp plugin's 
+configuration path (just copy the folders from 'configDir' to their new destination):
+- 'http' with subfolders 'icons' and 'xml'.
+  The xml folder contains the content directory and connection manager service SCPD files.
+- 'EpgProgrammingConfirmation' with the file '00001.ts' (This small video is used
+   to confirm a scheduled recording task.)
+- 'RecTimerPurgeConfirmation' with the file '00001.ts' (This small video is used
+   to confirm the deletion of a recording task.)

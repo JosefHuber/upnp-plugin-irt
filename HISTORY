@@ -1,0 +1,71 @@
+VDR Plugin 'upnp' Revision History
+----------------------------------
+
+2009-01-25: Version 0.0.2-alpha1
+
+ - Bug: A minor bug prevented the plugin from detecting the resources
+        correnctly
+
+2009-01-24: Version 0.0.2-alpha0
+
+ - New: Added record streaming support for SDTV
+        HDTV is not working yet, as it requires different DLNA profiles
+ - Bug: Improved live-tv streaming quality, which will hopefully fix the
+        problem with the buffer strategy and channels with bad bandwidth
+ - New: Rearranged folder structure to meet future features
+ - New: Added german translation
+ - New: support for DLNA compatible devices. For those devices a special
+        patch is required which must be applied to libupnp-1.6.6.
+        See README for more information
+ - New: Added new command line option to specify the destination folder
+        for the metadata database and the webfolder.
+        See README for more information
+
+2009-11-19: Version 0.0.1-alpha4
+
+- New: Added options for verbosity level and autodetect settings.
+
+2009-10-23: Version 0.0.1-alpha1
+
+- Fixed #185: Database rejected statements with single quotes inside strings
+
+2009-10-23: Version 0.0.1-alpha0
+
+- Initial revision.
+- Known limitations: currently only channel lists with less than 30 channels
+  work.
+- LiveTV support
+- Limited sort capabilities: Title, Creator, Write status, Publisher,
+  Description, Long description, Genre
+  Note: Sort will only work if this properties are present
+
+
+2013-03-25: Version 0.0.3
+
+ - New: EPG items: Recording tasks can be scheduled by 'playing' these items.
+        When rendering the items a short video is displayed confirming the new created timer.
+        With a content directory browse the returning DIDL-Lite object of an EPG item contains beside 
+        the title, start and end time of the broadcast event its description, synopsis and genre(s) if 
+        these informations are available as SI data in the transport stream. 
+ - New: Record timer items: A scheduled recording task can be cancelled 'playing' these items.
+        When rendering such an item by an UPnP client a small confirmation video is given, too.
+        The DIDL-Lite object of a browsed record timer item contains the title, start and end time 
+        of the associated broadcast event.
+ - New: Audio broadcast streaming and recording
+ - New: Additional plugin start options: 
+        - to show the radio containers and items
+        - to prepend a broadcast title by the channel name
+        - to append the channel name to the recording title
+        - to show/hide EPG containers and items with the content directory browse function
+        - to define the number of days the EPG items are gathered in advance
+        - to oppress the record timer folders and items with content directory browse
+        - to select only the first n channels from the 'channels.conf' file
+        - to select only free to air channels
+ - New: The modified ffmpeg library used with the Linux Debian Wheezy distribution is supported.
+        When using the upnp plugin with this ffmpeg version the 'DEFINES' parameter of
+        the Makefile has to be appended with 'AVCODEC53' to reflect changed header files.
+ - Database accesses are made with precompiled SQL statements allowing faster responses. 
+   New database tables have been created to reflect EPG items, record timer items and audio broadcast.
+ - Recording lengths and durations are checked and updated periodically.
+        
+       
